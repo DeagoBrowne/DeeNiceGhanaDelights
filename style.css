@@ -68,14 +68,19 @@ header {
   }
 
   .nav-bar {
-    height: 450px;
+    height: 0px;
     position: absolute;
     top: 65px;
     left: 0;
     right: 0;
     width: 100vw;
     background: #6a994e;
-    transition: 0.2s;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 450px;
   }
 
   .nav-bar ul {
@@ -84,9 +89,15 @@ header {
     margin: 80px auto 0 auto;
     text-align: center;
     transition: 0.5s;
+    opacity: 0;
   }
 
-  .nav-bar ul li {
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
     margin: 10px 0;
   }
+
 }
