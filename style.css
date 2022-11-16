@@ -20,9 +20,13 @@ header {
   padding: 0 50px;
 }
 
-.logo {
+.owner {
   font-size: 28px;
-  font-weight: bold;
+}
+
+.logo {
+  font-size: 18px;
+
 }
 
 .hamburger {
